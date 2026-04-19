@@ -1,0 +1,67 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme static {
+  --font-sans: "Plus Jakarta Sans", "Segoe UI", sans-serif;
+
+  --color-brand-50: #eef1ff;
+  --color-brand-100: #d8defe;
+  --color-brand-200: #b8c1fd;
+  --color-brand-300: #929df9;
+  --color-brand-400: #6e79ee;
+  --color-brand-500: #505adf;
+  --color-brand-600: #3741c0;
+  --color-brand-700: #1b1f6b;
+  --color-brand-800: #171a57;
+  --color-brand-900: #121441;
+  --color-brand-950: #0a0d2a;
+
+  --color-lavender-50: #faf7ff;
+  --color-lavender-100: #f3ecff;
+  --color-lavender-200: #e6dbff;
+  --color-lavender-300: #d5c0ff;
+  --color-lavender-400: #bea0ff;
+  --color-lavender-500: #a47fff;
+  --color-lavender-600: #8b5cf6;
+  --color-lavender-700: #7443de;
+  --color-lavender-800: #5e34b6;
+  --color-lavender-900: #46298a;
+  --color-lavender-950: #301c5c;
+}
+
+:root {
+  --ui-radius: 1.25rem;
+  --ui-container: 72rem;
+  --surface-base: #f5f6fb;
+  --surface-muted: #e6e8f2;
+  --surface-card: rgba(255, 255, 255, 0.88);
+  --shadow-soft: 0 24px 60px -36px rgba(27, 31, 107, 0.35);
+}
+
+html {
+  background: var(--surface-base);
+}
+
+body {
+  min-height: 100vh;
+  color: #0f172a;
+  font-family: var(--font-sans);
+  background:
+    radial-gradient(circle at top left, rgba(191, 204, 255, 0.55), transparent 32%),
+    radial-gradient(circle at bottom right, rgba(217, 219, 245, 0.85), transparent 28%),
+    linear-gradient(180deg, #fbfbfe 0%, var(--surface-base) 58%, #eef1f9 100%);
+}
+
+#__nuxt {
+  min-height: 100vh;
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.glass-card {
+  background: var(--surface-card);
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(14px);
+}
