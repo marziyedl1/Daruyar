@@ -42,3 +42,9 @@ NUXT_PUBLIC_FIREBASE_MEASUREMENT_ID=
 - `components/ui` and `components/shared` foundation added
 - base layout, theme tokens, and landing/demo page created
 - feature-based folders prepared for auth, medications, dashboard, history, billing, and notifications
+
+## Ticket 2.1 Deliverables
+
+- Firebase client plugin added in [plugins/firebase.client.ts](/e:/Marzieh/Projects/DaruYar/plugins/firebase.client.ts)
+- typed Firebase accessors added for app, auth, and Firestore
+- runtime config already wired through `NUXT_PUBLIC_FIREBASE_*` environment variables
